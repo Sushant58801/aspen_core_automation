@@ -14,9 +14,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.yaml.snakeyaml.scanner.Constant;
+
 
 import com.aventstack.extentreports.utils.FileUtil;
+import com.core.Utilities.Constant;
 
 public interface Browser {
 
@@ -31,7 +32,7 @@ public interface Browser {
 		}
 	}
 
-	static String capture(WebDriver driver) {
+	static String capture(WebDriver driver) throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		File dest = new File(Constant.screenshotreportpath + System.currentTimeMillis() + ".png");
 		String errflpath = dest.getAbsolutePath();
