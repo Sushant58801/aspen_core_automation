@@ -30,7 +30,7 @@ public class BrowserJava {
 	}
 	
 	public static String getAttributeValue(By locator, String attribute) {
-		return findElement(locator).getAttribute(attribute);
+		return findElement(locator).getAttribute(attribute); test
 	}
 	
 	
