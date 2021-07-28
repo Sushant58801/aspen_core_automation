@@ -15,7 +15,6 @@ import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 import com.aventstack.extentreports.utils.FileUtil;
 import com.core.Utilities.Constant;
 
@@ -48,43 +47,43 @@ public interface Browser {
 		}
 
 	}
-	
+
 	public void launch(String url);
-	
+
 	public void click(By locator);
-	
-	public void sendkeys(By locator,String string);
-	
-	public void sendkeys(By locator,Keys key);
-	
+
+	public void sendkeys(By locator, String string);
+
+	public void sendkeys(By locator, Keys key);
+
 	public void doubleClick(By locator);
-	
+
 	public String getElementText(By locator);
-	
+
 	public String getAttributeValue(By locator, String attributname);
-	
+
 	public boolean elementEnabled(By locator);
-	
+
 	public boolean elementSelected(By locator);
-	
+
 	public boolean elementVisible(By locator);
-	
+
 	public WebElement findElement(By locator);
-	
+
 	public void scrollTo(By locator);
-	
+
 	public void clearText(By locator);
-	
+
 	public void switchToFrame(int index);
-	
+
 	public void switchToFrame(String framename);
-	
+
 	public void switchToParent();
-	
+
 	public void rightClick(By locator);
-	
+
 	public void expliciteWait(By locator);
-	
+
 	public void mouseHover(By locator);
 
 }

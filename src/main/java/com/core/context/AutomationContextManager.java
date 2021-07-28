@@ -64,7 +64,7 @@ public class AutomationContextManager {
 
 	public static void setExtendtest(ITestContext context) {
 		ExtentTest extenttest = AutomationContextManager.getExtend().createTest(context.getName());
-		AutomationContextManager.extendtest.set(extenttest); 
+		AutomationContextManager.extendtest.set(extenttest);
 	}
 
 	public static ExtentTest getExtenttestnode() {
@@ -75,9 +75,5 @@ public class AutomationContextManager {
 		ExtentTest extentestnode = getExtendtest().createNode(featurname);
 		AutomationContextManager.extenttestnode.set(extentestnode);
 	}
-	
-	
-	
-	
 
 }
